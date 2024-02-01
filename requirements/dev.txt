@@ -10,25 +10,29 @@ attrs==21.2.0
     # via pytest
 babel==2.9.1
     # via sphinx
-backports.entry-points-selectable==1.1.0
-    # via virtualenv
+cachetools==5.3.2
+    # via tox
 certifi==2021.10.8
     # via requests
 cfgv==3.3.1
     # via pre-commit
+chardet==5.2.0
+    # via tox
 charset-normalizer==2.0.7
     # via requests
 click==8.0.3
     # via pip-tools
+colorama==0.4.6
+    # via tox
 deprecated==1.2.13
     # via redis
-distlib==0.3.3
+distlib==0.3.8
     # via virtualenv
 docutils==0.16
     # via
     #   sphinx
     #   sphinx-tabs
-filelock==3.3.2
+filelock==3.13.1
     # via
     #   tox
     #   virtualenv
@@ -37,6 +41,8 @@ identify==2.3.3
 idna==3.3
     # via requests
 imagesize==1.2.0
+    # via sphinx
+importlib-metadata==7.0.1
     # via sphinx
 iniconfig==1.1.1
     # via pytest
@@ -50,9 +56,10 @@ mypy-extensions==0.4.3
     # via mypy
 nodeenv==1.6.0
     # via pre-commit
-packaging==21.3
+packaging==23.2
     # via
     #   pallets-sphinx-themes
+    #   pyproject-api
     #   pytest
     #   redis
     #   sphinx
@@ -63,9 +70,11 @@ pep517==0.12.0
     # via pip-tools
 pip-tools==6.4.0
     # via -r dev.in
-platformdirs==2.4.0
-    # via virtualenv
-pluggy==1.0.0
+platformdirs==4.2.0
+    # via
+    #   tox
+    #   virtualenv
+pluggy==1.4.0
     # via
     #   pytest
     #   tox
@@ -74,17 +83,15 @@ pre-commit==2.17.0
 psutil==5.8.0
     # via pytest-xprocess
 py==1.10.0
-    # via
-    #   pytest
-    #   tox
+    # via pytest
 pygments==2.10.0
     # via
     #   sphinx
     #   sphinx-tabs
 pylibmc==1.6.1
     # via -r tests.in
-pyparsing==2.4.7
-    # via packaging
+pyproject-api==1.6.1
+    # via tox
 pytest==6.2.5
     # via
     #   -r tests.in
@@ -99,10 +106,6 @@ redis==4.1.2
     # via -r tests.in
 requests==2.26.0
     # via sphinx
-six==1.16.0
-    # via
-    #   tox
-    #   virtualenv
 snowballstemmer==2.1.0
     # via sphinx
 sphinx==4.4.0
@@ -134,12 +137,13 @@ toml==0.10.2
     # via
     #   pre-commit
     #   pytest
-    #   tox
-tomli==1.2.2
+tomli==2.0.1
     # via
     #   mypy
     #   pep517
-tox==3.24.5
+    #   pyproject-api
+    #   tox
+tox==4.12.1
     # via -r dev.in
 types-redis==4.1.13
     # via -r typing.in
@@ -149,7 +153,7 @@ urllib3==1.26.7
     # via requests
 uwsgi==2.0.20
     # via -r tests.in
-virtualenv==20.10.0
+virtualenv==20.25.0
     # via
     #   pre-commit
     #   tox
@@ -157,6 +161,8 @@ wheel==0.37.0
     # via pip-tools
 wrapt==1.13.3
     # via deprecated
+zipp==3.17.0
+    # via importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:
 # pip
