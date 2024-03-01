@@ -4,27 +4,25 @@
 #
 #    pip-compile requirements/tests.in
 #
-attrs==21.2.0
-    # via pytest
 deprecated==1.2.13
     # via redis
+exceptiongroup==1.2.0
+    # via pytest
 iniconfig==1.1.1
     # via pytest
 packaging==21.3
     # via
     #   pytest
     #   redis
-pluggy==1.0.0
+pluggy==1.4.0
     # via pytest
 psutil==5.8.0
     # via pytest-xprocess
-py==1.10.0
-    # via pytest
 pylibmc==1.6.1
     # via -r tests.in
 pyparsing==2.4.7
     # via packaging
-pytest==6.2.5
+pytest==8.0.2
     # via
     #   -r tests.in
     #   pytest-xprocess
@@ -32,7 +30,7 @@ pytest-xprocess==0.18.1
     # via -r tests.in
 redis==4.1.2
     # via -r tests.in
-toml==0.10.2
+tomli==2.0.1
     # via pytest
 uwsgi==2.0.20
     # via -r tests.in
